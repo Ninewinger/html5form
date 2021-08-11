@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html5form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row card text-center">
+            <div class="card-header d-flex flex-row">
+                <h1>Payment form example</h1>
+            </div>
+            <div class="card-body">
+                <h5 class="alert alert-danger d-flex flex-row" role="alert">Some fields are missing</h5>
+                <input type="number" name="card" id="card" placeholder="xxxxxxxxxxxxxx">
+                <label for="card">Card #</label>
+                <input type="number" id="cvc" placeholder="0000">
+                <label for="cvc">CVC #</label>
+                <input type="number" id="amount" placeholder="Amount">
+                <label for="amount">Amount</label>
+                <input type="text" id="name">
+                <label for="name">First Name</label>
+                <input type="text" id="lname">
+                <label for="lname">Last Name</label>
+                <input type="text" name="" id="city">
+                <label for="city">City</label>
+                <select name="" id="state">
+                    <option value="">Pick a state</option>
+                    <option value="">qsd</option>
+                </select>
+                <input type="number" name="" id="postal">
+                <label for="postal">Postal Code</label>
+                <div>
+                    <input type="radio" name="pago" id="master">
+                    <label for="master"><i class="fab fa-cc-mastercard"></i></label>
+                    <input type="radio" name="pago" id="visa">
+                    <label for="visa"><i class="fab fa-cc-visa"></i></label>
+                    <input type="radio" name="pago" id="diner">
+                    <label for="diner"><i class="fab fa-cc-diners-club"></i></label>
+                    <input type="radio" name="pago" id="amex">
+                    <label for="amex"><i class="fab fa-cc-amex"></i></label>
+                </div>
+                <div>
+                    <label for="texta">Message</label>
+                    <textarea name="" id="texta" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="card-footer text-muted d-flex flex-row-reverse">
+                <button type="button" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-secondary ">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
